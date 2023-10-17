@@ -34,7 +34,7 @@ jobs:
         with:
           file: Dockerfile
           push: true
-          tags: ${{ steps.login-ecr.outputs.registry }}/cermine:latest
+          tags: ${{ steps.login-ecr.outputs.registry }}/${{ env.BRICKS_CLIENT }}-test-ecr:cermine.${{ github.RUN_NUMBER }}
           cache-from: type=gha,scope=${{ github.ref_name }}-cermine
           cache-to: type=gha,mode=max,scope=${{ github.ref_name }}-cermine
   
