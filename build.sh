@@ -3,4 +3,4 @@ set -e
 
 source .env
 
-docker build -t elifesciences/cermine:${CERMINE_VERSION} --build-arg CERMINE_VERSION=${CERMINE_VERSION} .
+docker build -t pharmareview/cermine:${CERMINE_VERSION} --build-arg CERMINE_VERSION=${CERMINE_VERSION} .

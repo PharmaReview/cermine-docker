@@ -21,5 +21,5 @@ A docker image for a [CERMINE](https://github.com/CeON/CERMINE) server.
 or:
 
 ```bash
-docker run -p 8072:8080 elifesciences/cermine:1.13
+docker run -p 8072:8080 pharmareview/cermine:1.13
 ```
